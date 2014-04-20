@@ -1,0 +1,17 @@
+Carew
+    L'ordre d'affichage des pages se fait pas le biais du nom du fichier 'md'
+    la plupart des bolck utilisés dans les twig (ex: default.html.twig) peuvent être modifiés dans le fichier blocks.html.twig qui surcharge les bolck (use '@default_theme/blocks.html.twig')
+
+Boostrap
+Pour créer son thème (de phase simple sans paramètrage)
+    Créer un dossier 'theme_perso'
+        Dans le dossier création des répertoires : assets et layouts
+        Dans le layout, on recopie le dossier d'origine
+        Dansz assets, on créé les répertoires: css, js, img
+            Dans img on recopie les deux fichiers d'origine : glyphicons-halflings-white.png et glyphicons-halflings.png
+            Dans js on recopie les deux fichiers d'origine : jquery-1.9.0.min.js et modernizr-2.6.1-respond-1.1.0.min.js
+            Dans js on copie le fichier Boostrap.min.js depuis le site http://getbootstrap.com/getting-started/
+            Dans css on copie le fichier Boostrap.css du thème choisit sur le site http://bootswatch.com (Attention à la version ici 2.2.2)
+    Dans le fichier config.yml, il faut modifier l'adresse du thèmes du site (exemple: - %dir%/theme_perso)
+    Dans le fichier default.html.twig faire les modifications nécesaires dans 'block stylesheets' et 'block javascripts' pour aller rechercher les nouveaux fichiers précédemment créés
+    Pour modifier l'aspect du thème, on créé un fichier css avec les modifications vouluées et on intégre dans le fichier default.html.twig

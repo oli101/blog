@@ -1,0 +1,11 @@
+site:
+    title:        Oli101site
+    description:  Is awesome
+    author_name:  oli101
+    author_email: Your email here
+    author_url:   oli101.free.fr
+    url_absolute: http://oli101.free.fr
+
+engine:
+    themes:
+        - %dir%/theme_perso

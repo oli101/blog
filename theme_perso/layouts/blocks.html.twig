@@ -1,0 +1,64 @@
+{% use '@default_theme/blocks.html.twig' %}
+
+{% block document_toc %}
+{% spaceless -%}
+    {% if 0 == deep %}<div class="well">{% endif %}
+    <ul class="nav nav-list">
+        {% if 0 == deep %}
+            <li class="nav-header">Quick access</li>
+        {% endif %}
+        {% for child in children %}
+            <li>
+                <a href="#{{ child.id }}">{{ child.title }}</a>
+                {% if child.children %}
+                    {{ render_document_toc(child.children, deep + 1) }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% if 0 == deep %}</div>{% endif %}
+{%- endspaceless %}
+{% endblock %}
+
+{% block documents %}
+{% spaceless -%}
+    <ul class="{% block ul_class 'unstyled' %}" style="padding-left:30px">
+        {% for document in documents %}
+            <li class="{% block li_class '' %}">
+                <h5>
+                    <a href="{{ render_document_path(document) }}">
+                        {% if document.isTypePost %}
+                            {% block post_list %}
+                                <i class="icon-book"></i>
+                                {{ render_document_title(document) }}
+                                <small>({{ document.metadatas.date|date('Y-m-d') }})</small>
+                            {% endblock %}
+                        {% else %}
+                            {% block document_list %}
+                                <i class="icon-minus"></i>
+                                {{ render_document_title(document) }}
+                            {% endblock %}
+                        {% endif %}
+                    </a>
+                </h5>
+            </li>
+        {% endfor %}
+    </ul>
+{%- endspaceless %}
+{% endblock %}
+
+{% block pagination %}
+{% spaceless %}
+    {% if 1 < pages|length %}
+        <div class="pagination">
+            <ul>
+                {% for page_number, document in pages %}
+                    <li{% if current_page == page_number %} class="active"{% endif %}>
+                        <a href="{{ render_document_path(document) }}">{{ page_number }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endspaceless %}
+{% endblock %}
