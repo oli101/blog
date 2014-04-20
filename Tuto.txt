@@ -15,3 +15,4 @@ Pour créer son thème (de phase simple sans paramètrage)
     Dans le fichier config.yml, il faut modifier l'adresse du thèmes du site (exemple: - %dir%/theme_perso)
     Dans le fichier default.html.twig faire les modifications nécesaires dans 'block stylesheets' et 'block javascripts' pour aller rechercher les nouveaux fichiers précédemment créés
     Pour modifier l'aspect du thème, on créé un fichier css avec les modifications vouluées et on intégre dans le fichier default.html.twig
+toto
