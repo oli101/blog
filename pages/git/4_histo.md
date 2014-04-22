@@ -8,10 +8,12 @@ layout: doc2
 
 
 ##Lecture les logs
-L'analyse des logs permet de connaître tout le passif d'un projet, pour cela il suffit d'executer la commande suivante :
+L'analyse des logs permet de connaître tout le passif d'un projet, pour cela il suffit d'executer la commande suivante : 
+
     $git log
 
-Cela donne le résultat suivant :
+Cela donne le résultat suivant : 
+
     commit fd1c927c592da1ac334ea3c55bb77488aca0d985
     Author: Olivier Lamarre <OlivierLAMARRE@aft-iftim.com>
     Date:   Wed Dec 4 10:44:07 2013 +0100
@@ -30,8 +32,15 @@ Cela donne le résultat suivant :
 
         Removed useless files and move fancybox dir
 
-##Connaitre l'état de l'arbr du projet
+##Connaitre l'état de l'arbre du projet
+Pour que cela focntionne correctement il faut ajouter une ligne supplémentaire dans la config git
+Dans le répetoire .git se trouyve le fichier "config", il suffit d'ajouter la ligne suivante : 
+
+    [alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit 
+
 Cela s'effectue avec la commande suivante : 
+
     git lg --all
 
 Ce qui donne l'affichage suivant : 
