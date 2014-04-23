@@ -52,3 +52,12 @@ Ce qui donne l'affichage suivant :
     * 99698b7 -Modification de la hauteur du body (Olivier Lamarre 5 weeks ago)
     * 3a0553b -Fixed fancybox static file published in build (Olivier Lamarre 5 weeks ago)
     * da5669f -Initial commit (Olivier Lamarre 5 weeks ago)
+
+## Connaître l'état sur le serveur distant
+Pour cela il faut mettrre à jour les données de la brache serveur sur notre PC avec la commande : 
+    $git fetch origin
+
+
+## Appliquer les modifications et repositionner l'abre de développememt
+Cette action aura pour but de mettre à niveau la branche master du local par rapport à la branche origin du serveur, cette action suit le "fetch" précédent:
+    $git rebase origin/master
