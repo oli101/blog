@@ -2,19 +2,19 @@
 title: Modifier le code, effectuer des commits et publication
 subtitle: Gestion des versions
 navigations: git
-layout: doc2
 ---
 
 ##Connaitre les changements effectués sur un projet
 ###Etat du projet local
-Pour connaître l'état du projet et son avancement en terme de modification il suffit de lancer la commande suivante dans le répertoire du projet
+Pour connaître l'état du projet et son avancement en terme de modification il suffit de lancer la commande suivante dans le répertoire du projet: 
+
     $ git status
     # On branch master
     nothing to commit (working directory clean)
 
 Ce message nous informe que rien n’a été modifié. 
 
-Après modifictaion sur un des fichiers du projet voici le résultat:
+Après modifictaion sur un des fichiers du projet voici le résultat: 
 
     $ git status
     # On branch master
@@ -29,7 +29,7 @@ Après modifictaion sur un des fichiers du projet voici le résultat:
 
 
 ###Connaître les modification sur le projet
-Pour connaître exactement les modifcations il suffit de lancer la commande diff
+Pour connaître exactement les modifcations il suffit de lancer la commande diff 
 
     $ git diff
     diff --git a/fancybox.py b/fancybox.py
@@ -54,7 +54,8 @@ Le dépôt local est composé de trois "arbres" gérés par git.
 
 ###Valider les modifications
 Avant de pouvoir commiter, il faut valider ces changements. 
-Cela s'effectue par la commande suivant :
+Cela s'effectue par la commande suivant : 
+
     $git add <filename>
 
 le fichier ainsi modifié passe en état *staged*, autrement dit il est dans le deuxième arbre. 
@@ -62,7 +63,8 @@ Pour ajouter toutes les modifications il suffit d'ajouter --all à  la place de 
 
 
 ###Commiter les modifications
-Pour cela il faut utiliser la commande suivante :
+Pour cela il faut utiliser la commande suivante : 
+
     $git commit -m "Messsage"
 
 le fichier passe en état *commited*, autrement dit il est dans le troisième arbre, pret à être eenvoyé sur le serveur central.

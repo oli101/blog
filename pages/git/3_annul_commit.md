@@ -2,7 +2,6 @@
 title: Annuler un commit effectué par erreur
 subtitle: Gestion des versions
 navigations: git
-layout: doc2
 ---
 
 
