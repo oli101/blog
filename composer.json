@@ -15,6 +15,9 @@
         "carew/theme-bootstrap": "~2.0@dev",
         "twig/twig": "1.14.*@dev"
     },
+    "autoload": {
+        "psr-0": { "AFT\\": "src/" }
+    },
     "config": {
         "bin-dir": "bin"
     },

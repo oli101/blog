@@ -9,3 +9,6 @@ site:
 engine:
     themes:
         - %dir%/theme_perso
+
+    extensions:
+        - AFT\Carew\AFTCarewExtension
