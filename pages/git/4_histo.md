@@ -2,7 +2,6 @@
 title: Historique et état d'un projet
 subtitle: Gestion des versions
 navigations: git
-layout: doc2
 ---
 
 
@@ -55,9 +54,11 @@ Ce qui donne l'affichage suivant :
 
 ## Connaître l'état sur le serveur distant
 Pour cela il faut mettrre à jour les données de la brache serveur sur notre PC avec la commande : 
+
     $git fetch origin
 
 
 ## Appliquer les modifications et repositionner l'abre de développememt
-Cette action aura pour but de mettre à niveau la branche master du local par rapport à la branche origin du serveur, cette action suit le "fetch" précédent:
+Cette action aura pour but de mettre à niveau la branche master du local par rapport à la branche origin du serveur, cette action suit le "fetch" précédent: 
+
     $git rebase origin/master

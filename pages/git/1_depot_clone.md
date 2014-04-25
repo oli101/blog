@@ -2,7 +2,6 @@
 title: Créer un nouveau dépôt ou cloner un dépôt existant
 subtitle: Gestion des versions
 navigations: git
-layout: doc2
 ---
 
 ##Créer un nouveau dépôt
@@ -19,15 +18,16 @@ C’est tout ! Vous venez de créer un nouveau projet Git dans le dossier où vo
 Un dossier caché .git vient tout simplement d’être créé.
 
 ##Connaitre les dépôts existants sur le serveur
-La liste des dépôts s'affiche par une commande ssh comme suit:
+La liste des dépôts s'affiche par une commande ssh comme suit: 
+
     ssh git@A20000A00S190.aft-iftim.france
 
 **A20000A00S190.aft-iftim.france** étant notre serveur de dépot.
 
-Voici le résultat de la commande :
-    PTY allocation request failed on channel 0
-    hello OlivierLAMARRE, this is git@A20000A00S190 running gitolite3 v3.5.1-0-g1136                   570 on git 1.7.1
+Voici le résultat de la commande : 
 
+    PTY allocation request failed on channel 0
+    hello OlivierLAMARRE, this is git@A20000A00S190 running gitolite3 v3.5.1-0-g1136570 on git 1.7.1
      R W    android/evaluation
      R W    ansible/vm
      R W    bundles/AFT/ConnectBundle
@@ -57,14 +57,16 @@ Voici le résultat de la commande :
 
 ## Cloner un dépôt existant
 Cloner un dépôt existant consiste à récupérer tout l’historique et tous les codes source d’un projet avec Git. 
-La commande est la suivante:
+La commande est la suivante: 
 ```bash
 git clone serveur:dossier [dossier]
 ```
-exemple :
+exemple : 
+
     $ git clone git@A20000A00S190.aft-iftim.france:sphinx/extension/fancybox.git fancybox_git  
 
-Voici le résultat de la commande :
+Voici le résultat de la commande : 
+
     $ git clone git@A20000A00S190.aft-iftim.france:sphinx/extension/fancybox.git fancybox_git
     Cloning into 'fancybox_git'...
     remote: Counting objects: 154, done.
