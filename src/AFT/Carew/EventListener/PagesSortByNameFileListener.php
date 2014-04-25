@@ -11,6 +11,7 @@ class PagesSortByNameFileListener implements EventSubscriberInterface
 {
     public function onDocuments(CarewEvent $event)
     {
+        var_dump('helll');
         $documents = $event->getSubject();
 
         // Le tableau collection va permettre de gérer que les pages
