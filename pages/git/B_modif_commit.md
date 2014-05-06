@@ -76,4 +76,4 @@ Les modification commitées sont dans le HEAD de la copie du dépôt local. Pour
     $git push origin master
 
 * origin étant le nom pour le dépot distant
-* master étant la branche dans laquelle on souhaite envoyer les modificztion ( si pas de branche on laisse master)
+* master étant la branche dans laquelle on souhaite envoyer les modifications ( si pas de branche on laisse master)

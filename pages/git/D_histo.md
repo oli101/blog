@@ -52,8 +52,8 @@ Ce qui donne l'affichage suivant :
     * 3a0553b -Fixed fancybox static file published in build (Olivier Lamarre 5 weeks ago)
     * da5669f -Initial commit (Olivier Lamarre 5 weeks ago)
 
-## Connaître l'état sur le serveur distant
-Pour cela il faut mettrre à jour les données de la brache serveur sur notre PC avec la commande : 
+## Récupérer et tirer depuis des dépôts distants
+Pour cela il faut mettrre à jour les données de la branche serveur sur notre PC avec la commande : 
 
     $git fetch origin
 
