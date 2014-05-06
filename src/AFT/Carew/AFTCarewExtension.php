@@ -17,8 +17,10 @@ class AFTCarewExtension implements ExtensionInterface
             throw new \Exception('Twig Carew extension not found');
         }
 
+        // Appel au code perso pour pouvsoir avoir l'affichage des pages par ordre alphabetique
         $container['twig']->addExtension(new AFTExtension($container['twig']->getExtension('carew')));
 
+        // Anciennne extension qui ne fonctionne pas, tri bien lors de la construction mais aucun effet lors de l'affichage
         $carew->getEventDispatcher()->addSubscriber(new PagesSortByNameFileListener());
     }
 }

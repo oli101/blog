@@ -9,13 +9,13 @@ class AFTExtension extends \Twig_Extension
 {
     protected $carewExtension;
 
-    // Le contructeur se base sur l'objet carewExtension déja construit
+    // Le contructeur se base sur l'objet carewExtension déja existant
     public function __construct(CarewExtension $carewExtension)
     {
         $this->carewExtension = $carewExtension;
     }
 
-    // Méthode magique qui permet d'intercepté l'appel à la fonction renderDocuments
+    // Méthode magique qui permet d'intercepter l'appel une fonction sans pour autant connaitre le nom (renderDocuments)
     public function __call($name, $arguments)
     {
         // La fonction call_user_fucntion_array va donc appler la methode renderDocuments pour notre CarewExtension avecle passage de tous les parametres
