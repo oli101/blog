@@ -134,76 +134,60 @@ Au démarrage du mac il fau appuyez sur la touche ou la combinaison de touches j
             <td>cmd +opt +P +R</td>
             <td>Réinitialiser la mémoire NVRAM/PRAM</td>
         </tr>
-        <tr>
-            <td>cmd + Z</td>
-            <td>Annuler / Rétablir</td>
-        </tr>
-        <tr>
-            <td>cmd + Suppr</td>
-            <td>Placer dans la corbeille</td>
-        </tr>
     </tbody>
 </table>
 
 
-* ⌥ + (               {     accolade ouvrante
-* ⌥ + )               }     accolade fermante
-* ⌥ + ⇧ + (          [     crochet ouvrant
-* ⌥ + ⇧ + )          ]     crochet fermant
-* ⌥ + N               ~     tilde
-* ⌥ + ⇧ + L          |     pipe
-* ⌥ + ⇧ + /          \     antislash
-
-
-<div style="font-family: Cambria;">⏏</div>
+##Pour le développement
 
 <table class="table table-striped table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th>Commandes</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>⌘ + ⇧ + 3</td>
-                    <td>Capture d'écran (enregistrée sur le bureau)</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                  <tr class="success">
-                    <td>4</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                  <tr class="danger">
-                    <td>5</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                  <tr class="warning">
-                    <td>6</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                  <tr class="active">
-                    <td>7</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                  </tr>
-                </tbody>
-              </table>
+    <thead>
+        <tr>
+            <th>Commandes</th>
+            <th>Description</th>
+            <th>Symbole</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>⌥ + (</td>
+            <td>Accolade ouvrante</td>
+            <td> { </td>
+        </tr>
+        <tr>
+            <td>⌥ + )</td>
+            <td>accolade fermante</td>
+            <td> } </td>
+        </tr>
+        <tr>
+            <td>⌥ + ⇧ + (</td>
+            <td>Crochet ouvrant</td>
+            <td> [ </td>
+        </tr>
+        <tr>
+            <td>⌥ + ⇧ + )</td>
+            <td>Crochet fermant</td>
+            <td> ] </td>
+        </tr>
+        <tr>
+            <td>⌥ + N</td>
+            <td>Tilde</td>
+            <td> ~ </td>
+        </tr>
+        <tr>
+            <td>⌥ + ⇧ + L</td>
+            <td>Pipe</td>
+            <td> | </td>
+        </tr>
+        <tr>
+            <td>⌥ + ⇧ + /</td>
+            <td>Antislash</td>
+            <td> \ </td>
+        </tr>
+        <tr>
+            <td>⌘ + ⇧ + 4</td>
+            <td>Capture selective de l’écran (enregistrée sur le bureau)</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
