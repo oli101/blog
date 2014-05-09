@@ -6,7 +6,7 @@ navigations: main
 
 ##En Image
 
-<img src="./images/git_workflow.png" alt="Git">
+<img src="./images/git_workflow.png" alt="Git"/>
 
 
 ## Pages
