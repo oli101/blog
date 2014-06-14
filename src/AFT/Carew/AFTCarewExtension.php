@@ -21,6 +21,6 @@ class AFTCarewExtension implements ExtensionInterface
         $container['twig']->addExtension(new AFTExtension($container['twig']->getExtension('carew')));
 
         // Anciennne extension qui ne fonctionne pas, tri bien lors de la construction mais aucun effet lors de l'affichage
-        $carew->getEventDispatcher()->addSubscriber(new PagesSortByNameFileListener());
+        // $carew->getEventDispatcher()->addSubscriber(new PagesSortByNameFileListener());
     }
 }

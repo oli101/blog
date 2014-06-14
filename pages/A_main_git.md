@@ -4,10 +4,9 @@ subtitle: Gestion des versions
 navigations: main
 ---
 
-##En Image
+## En Image
 
-<img src="./images/git_workflow.png" alt="Git">
-
+<img src="./images/git_workflow.png" alt="Git"/>
 
 ## Pages
 

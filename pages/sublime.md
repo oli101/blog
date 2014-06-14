@@ -1,6 +1,7 @@
 ---
 title: Sublime text
 subtitle: Editeur
+navigations: astuces
 ---
 
 
