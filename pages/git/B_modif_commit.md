@@ -69,7 +69,17 @@ Pour cela il faut utiliser la commande suivante :
 
 le fichier passe en état *commited*, autrement dit il est dans le troisième arbre, pret à être eenvoyé sur le serveur central.
 
-##Envyer vers le dépôt central
+##Travailler avec le Central
+###Connaître les différences avec le central
+Pour cela il suffit de lancer la commande suivante
+    $git diff master origin/master
+
+###Importer les différences du central
+Pour cela il suffit de lancer la commande suivante
+    $git fetch origin
+    $git rebase master
+
+###Envoyer vers le dépôt central
 
 Les modification commitées sont dans le HEAD de la copie du dépôt local. Pour les envoyer sur le dépôt distant, il faut exécuter la commande suivante:
 
@@ -77,3 +87,5 @@ Les modification commitées sont dans le HEAD de la copie du dépôt local. Pour
 
 * origin étant le nom pour le dépot distant
 * master étant la branche dans laquelle on souhaite envoyer les modifications ( si pas de branche on laisse master)
+
+##
