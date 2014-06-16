@@ -72,12 +72,14 @@ le fichier passe en état *commited*, autrement dit il est dans le troisième ar
 ##Travailler avec le Central
 ###Connaître les différences avec le central
 Pour cela il suffit de lancer la commande suivante
+
     $git diff master origin/master
 
 ###Importer les différences du central
-Pour cela il suffit de lancer la commande suivante
+Pour cela il suffit de lancer les commandes suivantes
+
     $git fetch origin
-    $git rebase master
+    $git rebase origin/master
 
 ###Envoyer vers le dépôt central
 
