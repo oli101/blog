@@ -43,8 +43,17 @@ navigations: astuces
 
 
 ## Package Control :
-Installer Package Control Plugin via la Console
-puis Ctrl + Shift + P : sélectionner Install Package et choisir dans la liste suivante
+
+### installation
+Pour installer Package control il suffit:
+
+* Cliquer sur le **Preferences**  > **Browse Packages**, cela va ouvrir le répertoire
+* Il faut remonter dans le dossier précédent pour avoir le dossier **Installed Packages**
+* Télécharger le  Package **Control.sublime-package** et le copier dans le dossier **Installed Packages**
+* Redémarrer Sublime Text
+
+### Utilisation
+Faire Ctrl + Shift + P : sélectionner Install Package et choisir dans la liste des actions proposées
 
 ## Voir l'encodage du fichier
 View -> Show Console 
