@@ -71,7 +71,7 @@ le fichier passe en état *commited*, autrement dit il est dans le troisième ar
 
 ##Travailler avec le Central
 ###Connaître les différences avec le central
-Pour cela il suffit de lancer la commande suivante
+Pour cela il suffit de lancer la commande suivante (La commande fecth origin doit être lancée avant):
 
     $git diff master origin/master
 
