@@ -4,7 +4,7 @@ subtitle: Installation application
 navigations: symfony
 ---
 
-##Récupération d'un projet
+##Migration d'un projet
 Si il existe des scripts de migration interne
 
      php app/console doctrine:migrations:execute 20141201114004
