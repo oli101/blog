@@ -29,7 +29,7 @@ Pour les javascripts:
     rsync -avz --delete-after --exclude-from=app/rsync_exclude.txt ./ etudes@10.0.6.102:/home/http/deploy/atr
 
 
-## Déploiement su la recette/dev
+## Déploiement sur la recette/dev
     fab -f bin/fabfile.py test deploy:force -p "etudes"
 
 
