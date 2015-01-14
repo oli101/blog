@@ -6,6 +6,9 @@ Depuis la machine Virtuelle, dans le dossier racine du projet:
     git fetch
     git rebase origin/master
 
+Si rpoblème de cache
+
+    rm -f /tmp/wsdl_8b0183f6eb607f85aeb7930e2533dbe6.cache
 
 ## Migration d'un projet
 Si il existe des scripts de migration interne
