@@ -1,4 +1,5 @@
 ## Récupération des données depuis git
+Depuis la machine Virtuelle, dans le dossier racine du projet:
 
     git status
     git lga
