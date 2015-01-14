@@ -26,6 +26,7 @@ Pour les javascripts:
 
 
 ## Deploiement sur le 102
+Depuis la machine Virtuelle, dans le dossier racine du projet:
     rsync -avz --delete-after --exclude-from=app/rsync_exclude.txt ./ etudes@10.0.6.102:/home/http/deploy/atr
 
 
